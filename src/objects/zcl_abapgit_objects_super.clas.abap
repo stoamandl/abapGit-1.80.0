@@ -303,7 +303,7 @@ CLASS ZCL_ABAPGIT_OBJECTS_SUPER IMPLEMENTATION.
         suppress_protocol         = abap_false
         with_program_includes     = abap_false
         suppress_dictionary_check = abap_false
-        phased_activation         = abap_false
+        "phased_activation         = abap_false "or import note xxxxx
       TABLES
         p_e071                    = lt_e071_tadirs
         p_xmsg                    = lt_messages.
