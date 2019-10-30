@@ -7,7 +7,7 @@ CLASS zcl_abapgit_object_susc DEFINITION PUBLIC INHERITING FROM zcl_abapgit_obje
     CONSTANTS transobjecttype_class TYPE char1 VALUE 'C' ##NO_TEXT.
 
     METHODS has_authorization
-      IMPORTING iv_object_type TYPE seu_objid
+      IMPORTING iv_object_type TYPE seu_obj "seu_objid not known in 702/09
                 iv_class       TYPE tobc-oclss
                 iv_activity    TYPE activ_auth
       RAISING   zcx_abapgit_exception.
@@ -19,7 +19,7 @@ CLASS zcl_abapgit_object_susc DEFINITION PUBLIC INHERITING FROM zcl_abapgit_obje
       IMPORTING iv_auth_object_class TYPE tobc-oclss.
     METHODS put_delete_to_transport
       IMPORTING iv_auth_object_class TYPE tobc-oclss
-                iv_object_type       TYPE seu_objid
+                iv_object_type       TYPE seu_obj "seu_objid not known in 702/09
       RAISING   zcx_abapgit_exception.
 
 ENDCLASS.
@@ -129,7 +129,7 @@ CLASS ZCL_ABAPGIT_OBJECT_SUSC IMPLEMENTATION.
     CONSTANTS lc_activity_delete_06 TYPE activ_auth VALUE '06'.
 
     DATA: lv_auth_object_class TYPE tobc-oclss.
-    DATA: lv_object_type       TYPE seu_objid.
+    DATA: lv_object_type       TYPE seu_obj. "seu_objid not known in 702/09
     DATA: lv_tr_object_name    TYPE e071-obj_name.
     DATA: lv_tr_return         TYPE char1.
 
