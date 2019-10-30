@@ -12,7 +12,7 @@ CLASS zcl_abapgit_object_shi3 DEFINITION PUBLIC INHERITING FROM zcl_abapgit_obje
   PROTECTED SECTION.
     METHODS has_authorization
       IMPORTING iv_devclass     TYPE devclass
-                iv_object_type  TYPE seu_objid
+                iv_object_type  TYPE seu_obj "seu_objid not known in 702/09
                 iv_structure_id TYPE hier_guid
                 iv_activity     TYPE activ_auth
       RAISING   zcx_abapgit_exception.
@@ -167,7 +167,7 @@ CLASS ZCL_ABAPGIT_OBJECT_SHI3 IMPLEMENTATION.
 
     CONSTANTS lc_activity_delete_06 TYPE activ_auth VALUE '06'.
 
-    DATA: lv_object_type    TYPE seu_objid.
+    DATA: lv_object_type    TYPE seu_obj. "seu_objid not known in 702/09
     DATA: lv_tr_object_name TYPE e071-obj_name.
     DATA: lv_tr_return      TYPE char1.
 
