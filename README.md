@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/larshp/abapGit.svg?branch=master)](https://travis-ci.org/larshp/abapGit)
+[![Build Status](https://travis-ci.org/stoamandl/abapGit-1.80.0.svg?branch=master)](https://travis-ci.org/stoamandl/abapGit-1.80.0)
 [![abaplint](https://abaplint.org/badges/larshp/abapGit)](https://abaplint.org/project/larshp/abapGit)
 [![Slack](https://abapgit-slackinviter.herokuapp.com/badge.svg)](https://abapgit-slackinviter.herokuapp.com/)
 
